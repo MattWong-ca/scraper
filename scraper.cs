@@ -13,7 +13,7 @@ namespace scraper
     {
         static void Main(string[] args)
         {
-			//Insert website URL here:
+	    //Insert website URL here:
             var webGet = new HtmlWeb();
             var document = webGet.Load("https://signal.nfx.com/investor-lists/top-fintech-pre-seed-investors");
             
@@ -23,20 +23,20 @@ namespace scraper
             //Selects everything after div tags
             var htmlNodes = document.DocumentNode.SelectNodes("//div/a");
 
-			//Creates .txt file in folder
-			//Writes console output in .txt file instead of console
-			//Only works once; must delete .txt file in folder if program already ran once
+	    //Creates .txt file in folder
+	    //Writes console output in .txt file instead of console
+	    //Only works once; must delete .txt file in folder if program already ran once
             FileStream filestream = new FileStream("ListOfFintechVCs.txt", FileMode.Create);
-			var streamwriter = new StreamWriter(filestream);
-			streamwriter.AutoFlush = true;
-			SetOut(streamwriter);
-			SetError(streamwriter);
+	    var streamwriter = new StreamWriter(filestream);
+	    streamwriter.AutoFlush = true;
+	    SetOut(streamwriter);
+	    SetError(streamwriter);
             
             //Writes each line of venture capitalist firms
             foreach (var node in htmlNodes)
-			{
-				WriteLine(node.Attributes["href"].Value);
-			}	
+	    {
+	        WriteLine(node.Attributes["href"].Value);
+	    }	
         }
     }
 }
