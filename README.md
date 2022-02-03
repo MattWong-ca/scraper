@@ -6,7 +6,7 @@ This C# webscraper takes in the URL of a signal.nfx.com list and outputs the ent
 
 
 # Website Screenshot ➡️ .txt File Screenshot
-<img src="https://github.com/MattWong-ca/scraper/blob/main/ScraperImages/TopFinTechPreSeedInvestors.png" width="442" height="761" alt="TopFinTechPreSeedInvestors"/>        ![txtFileOutput](https://github.com/MattWong-ca/scraper/blob/main/ScraperImages/txtFileOutput.png)
+<img src="https://github.com/MattWong-ca/scraper/blob/main/ScraperImages/TopFinTechPreSeedInvestors.png" width=30% height=30%> <img src="https://github.com/MattWong-ca/scraper/blob/main/ScraperImages/txtFileOutput.png" width=30% height=30%>
 
 
 
